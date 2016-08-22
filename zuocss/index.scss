@@ -1,0 +1,169 @@
+*{
+padding:0;
+margin:0;
+list-style: none;
+}
+body{
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+html{
+	height:100%;
+	width:100%;
+}
+.zbox1{
+	animation:myfirst 20s linear 0.1s infinite alternate;
+}
+.zbox{
+	z-index: 100;
+	height:600px;
+	width:600px;
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+
+	ul{
+	height:100%;
+	width:100%;
+	li{
+		float:left;
+	height:200px;
+	width:200px;
+	border:1px solid red;
+	box-sizing: border-box;
+	font-family: "iconfoot";
+	font-size: 25px;
+	line-height: 200px;
+	text-align: center;
+	font-size: 40px;
+	b{
+		cursor: pointer;
+	}
+	
+	}
+	}
+}
+
+
+.bbox1{
+animation:mysecond 20s linear 0.1s infinite alternate;
+}
+.bbox{
+	z-index: 100;
+	height:300px;
+	width:300px;
+    position: absolute;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+
+}
+ 
+  .boo{
+ 	height:100px;
+ 	width:100px;
+ 	background:blue;
+ 	float:left;
+ 	border-radius: 50%;
+ 	line-height: 100px;
+ 	text-align: center;
+ 	color:#fff;
+ 	cursor: pointer;
+ }
+
+ .bbox .boo:nth-child(1){
+	position: absolute;
+	top:0;
+	left:0;
+}
+ .bbox .boo:nth-child(2){
+	position: absolute;
+	top:0;
+	right:0;
+}
+ .bbox .boo:nth-child(3){
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+ .bbox .boo:nth-child(4){
+	position: absolute;
+right:0;
+bottom:0;
+}
+#grad2 {
+ 
+    background: -webkit-radial-gradient(circle, red, yellow, green); /* Safari 5.1 - 6.0 */
+    background: -o-radial-gradient(circle, red, yellow, green); /* Opera 11.6 - 12.0 */
+    background: -moz-radial-gradient(circle, red, yellow, green); /* Firefox 3.6 - 15 */
+    background: radial-gradient(circle, red, yellow, green); /* 标准的语法（必须放在最后） */
+}
+
+
+//动画
+@keyframes myfirst
+{
+0%   {background: red;transform:rotate(0deg);}
+25%  {background: pink;transform:rotate(90deg);}
+50%  {background: blue;transform:rotate(180deg);}
+100% {background: green;transform:rotate(270deg);}
+}
+
+@keyframes mysecond
+{
+0%   {transform:rotate(0deg);}
+25%  {transform:rotate(90deg);}
+50%  {transform:rotate(180deg);}
+100% {transform:rotate(270deg);}
+}
+//
+.tubox{
+background-image:url(../img/1348561926227.jpg); 
+   height:100%;
+   width:100%;
+
+}
+
+//流星
+.rainbow div{width:4px;height:4px; border-radius:4px;opacity:0;}
+.red{background:#FF3030;position: relative;top:130px;left:300px; 
+
+animation:rainbows 1.15s infinite linear;animation-delay:0.15s;
+ }
+ .red:after{width:200px;height:200px; content:"";
+ border-left: 1px solid #FF3030; display: block; 
+ transform:rotate(45deg); 
+ position: relative; top:-98px;left:42px;} 
+ .orange{background:#CD6600;position: relative;top:230px;left:400px; animation:rainbows 1.45s infinite linear;animation-delay:0.35s;}
+.orange:after{width:200px;height:200px; content:"";border-left: 2px solid #CD6600; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+
+.yellow{background:#FFD700;position: relative;top:200px;left:600px; 
+animation: rainbows 1200ms infinite linear;animation-delay:0.55s;}
+.yellow:after{width:200px;height:200px; content:"";border-left: 2px solid #FFD700; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+
+.green{background:#7FFF00;position: relative;top:135px;left:800px; 
+animation: rainbows 1.5s infinite linear;animation-delay:0.75s;}
+.green:after{width:200px;height:200px; content:"";border-left: 2px solid #7FFF00; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+
+.cyan{background:#6CA6CD;position: relative;top:130px;left:960px; 
+animation: rainbows 1.25s infinite linear;animation-delay:0.95s;}
+.cyan:after{width:200px;height:200px; content:"";border-left: 2px solid #6CA6CD; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+
+.blue{background:#4169E1;position: relative;top:140px;left:1100px; 
+animation: rainbows 0.75s infinite linear;animation-delay:1.15s;}
+.blue:after{width:200px;height:200px; content:"";border-left: 2px solid #4169E1; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+
+.purple{background:#9932CC;position: relative;top:130px;left:1200px; 
+animation: rainbows 1.5s infinite linear;animation-delay:1.85s;}
+.purple:after{width:200px;height:200px; content:"";border-left: 2px solid #9932CC; display: block; transform:rotate(45deg); position: relative; top:-98px;left:42px;}
+@keyframes rainbows{
+0%{opacity: 0;transform:scale(0) translate(0,0);}
+50%{opacity:1;transform:scale(1)  translate(-200px,200px);}
+100%{opacity:0;transform:scale(1) translate(-500px,500px);}
+}

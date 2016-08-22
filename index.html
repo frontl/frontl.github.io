@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<link rel="stylesheet" type="text/css" href="font/demo.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+	<link rel="stylesheet" type="text/css" href="zuocss/index.css">
+<script src="js/jquery.min.js"></script>
+<style type="text/css">
+
+</style>
+<body>
+<div class="zbox zbox1">
+   <ul>
+   	<li class="iconfont"><b>&#xe64b;</b> </li>
+   	<li class="iconfont"><b>&#xe68e;</b> </li>
+   	<li class="iconfont"><b>&#xe600;</b> </li>
+   	<li class="iconfont"><b>&#xe606;</b> </li>
+   	<li class="iconfont"><b>&#xe68b;</b> </li>
+   	<li class="iconfont"><b>&#xe621;</b> </li>
+   	<li class="iconfont"><b>&#xe677;</b> </li>
+   	<li class="iconfont"><b>&#xe627;</b> </li>
+   	<li class="iconfont"><b>&#xe603;</b> </li>
+
+   </ul>
+ </div>  
+
+   	<div class="bbox bbox1">
+   	<div class="boo" id="grad2">首页</div>
+   	<div class="boo" id="grad2">作品</div>
+   	<div class="boo" id="grad2">关于我</div>
+   	<div class="boo" id="grad2">联系我</div>
+   </div>
+
+   <div class="tubox">
+<!--    <div class="tubox-top"> 
+   <img src="img/11.png" alt="">
+   <img src="img/12.png" alt="">
+   <img src="img/13.png" alt="">
+   </div> -->
+   <div id="container">
+	<div class="rainbow">
+		<div class="red"></div>
+		<div class="orange"></div>
+		<div class="yellow"></div>
+		<div class="green"></div>
+		<div class="cyan"></div>
+		<div class="blue"></div>
+		<div class="purple"></div>
+	</div>
+</div>
+
+ 
+   </div>
+
+
+	<script type="text/javascript">
+	$('.zbox ul li:nth-child(1)').css({'background':'yellow'});
+	$('.zbox ul li:nth-child(3)').css('background','yellow');
+	$('.zbox ul li:nth-child(5)').css('background','yellow');
+	$('.zbox ul li:nth-child(7)').css('background','yellow');
+	$('.zbox ul li:nth-child(9)').css('background','yellow');
+
+	$('.zbox,.bbox').on('mouseover',function(){
+		$('.zbox').queue(function(){
+			$('.zbox').removeClass('zbox1')
+			$('.bbox').removeClass('bbox1')
+			 $(this).dequeue();
+		})
+	})
+
+		$('.zbox,.bbox').on('mouseout',function(){
+			 $('.zbox').queue(function(){
+		     $('.zbox').addClass('zbox1')
+	         $('.bbox').addClass('bbox1')
+			 $(this).dequeue();
+		})
+	
+
+
+	})
+
+		
+	
+
+	</script>
+	
+</body>
+
+</html>
