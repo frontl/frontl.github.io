@@ -1,0 +1,100 @@
+*{
+	padding:0;
+	margin:0;	
+	list-style: none;
+}
+html{
+	font-size: 100px;
+	height:100%;
+	width:100%;
+}
+body{
+	height:100%;
+	width:100%;
+	font-size: 14px;
+}
+.asas{
+	position: fixed;
+	bottom:0;
+
+}
+/*as*/
+
+.x{
+	display:none;
+}
+.xixibox{
+	
+	height:3rem;
+	width:3rem;
+	background:red;
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin:auto;
+	overflow: hidden;
+}
+
+
+.box{
+	z-index: -100;
+	height:100%;
+	width:100%;
+	background:red;
+	overflow: hidden;
+}
+.xibox{
+	height:100%;
+	width:100%;
+}
+.block{
+	background: yellow;
+	float:left;
+	height:10%;
+	width:5%;
+}
+.block:hover{
+	background:red;
+}
+.lei{
+	background:#ffffff;
+}
+@mixin username($size){
+	$shebei-list:320px,360px,375px,384px,412px,414px,435px,768px;
+	html{
+		@each $shebei in $shebei-list{
+			@media screen and(min-width: $shebei){
+				font-size: 100px * ($shebei/$size);
+			}
+		}
+	}
+}
+@include username(414px);
+
+@media screen and(max-width:768px){
+.xibox{
+	height:100%;
+	width:100%;
+}
+.lei{
+	background:#ffffff;
+}
+.block{
+	background: yellow;
+	float:left;
+	height:5%;
+	width:10%;
+}
+
+}
+
+
+/*8.17*/
+.bhd{
+	height:100%;
+	width:100%;
+	background: green;
+    overflow: hidden;
+}
