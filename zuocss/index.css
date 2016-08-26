@@ -5,6 +5,26 @@
   list-style: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: pink;
+}
+
+a:hover {
+  color: yellow;
+}
+
+a:active {
+  color: white;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -17,7 +37,7 @@ html {
 }
 
 .zbox1 {
-  animation: myfirst 20s linear 0.1s infinite alternate;
+  animation: mysecond 20s linear 0.1s infinite alternate;
 }
 
 .zbox {
@@ -41,7 +61,6 @@ html {
   float: left;
   height: 200px;
   width: 200px;
-  border: 1px solid red;
   box-sizing: border-box;
   font-family: "iconfoot";
   font-size: 25px;
@@ -52,6 +71,11 @@ html {
 
 .zbox ul li b {
   cursor: pointer;
+  color: #fff;
+}
+
+.zbox ul li b:hover {
+  color: red;
 }
 
 .bbox1 {
